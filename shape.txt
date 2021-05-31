@@ -1,0 +1,56 @@
+//shape
+using System;
+
+public class shape 
+{
+ 
+  
+}
+
+public class rectangle : shape  
+{
+ public void rectarea(int a , int b)
+ {
+ Console.WriteLine("area of rect is "+(a*b));
+ }
+}
+public class  square : rectangle
+{
+public void squarearea(int s)
+{
+Console.WriteLine("area of square is "+(s*s));
+}
+}
+
+
+public class Program
+{
+  public static void Main()
+  {
+	  square s1 = new square();
+	  Console.WriteLine("calculate area for 1.rectangle\n2.area of square");
+	  int choice=Convert.ToInt32(Console.ReadLine());
+	
+	  switch(choice)
+	  {
+		  case 1:
+			  {
+			   Console.WriteLine("enter length");
+	  int a=Convert.ToInt32(Console.ReadLine());
+			   Console.WriteLine("enter breadth");
+	  int b=Convert.ToInt32(Console.ReadLine());
+			  s1.rectarea(a,b);
+			  break;}
+		  case 2:
+			  {
+			  Console.WriteLine("enter side of square");
+	  int s=Convert.ToInt32(Console.ReadLine());
+			   s1.squarearea(s);
+			  break;
+			  }
+	 
+		  default:Console.WriteLine("invalid input");
+			  break;
+	  }
+  }
+}
