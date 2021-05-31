@@ -1,0 +1,45 @@
+//using_constructor_student
+using System;
+                   
+public class Program
+{
+	class Student
+{
+	public int Roll_no {get; set;}
+	public string Student_name {get; set;}
+
+	public void GetStudentData()
+	{
+		Console.WriteLine("Enter Student Roll_No: ");
+		Roll_no=Convert.ToInt32(Console.ReadLine());
+		
+	    Console.WriteLine("EnterStudent name: ");
+        Student_name = Console.ReadLine();
+	}
+	public void PrimaryStudentDetails()
+	{
+		 Console.WriteLine("Student Details are: ");
+		 Console.WriteLine("Roll No: " + Roll_no);
+		 Console.WriteLine("Student name: "+ Student_name);
+		 Console.ReadLine();
+	}
+	}
+    public static void Main()
+    {
+		Student s = new Student();
+		s. GetStudentData();
+		s.PrimaryStudentDetails();
+		
+		/*Console.WriteLine("Enter Student Roll_No: ");
+		s.Roll_no=Convert.ToInt32(Console.ReadLine());
+		
+	    Console.WriteLine("EnterStudent name: ");
+        s.Student_name = Console.ReadLine();
+		
+		 Console.WriteLine("Student Details are: ");
+		 Console.WriteLine("Roll No: " +s.Roll_no);
+		 Console.WriteLine("Student name: "+s.Student_name);*/
+		 Console.ReadLine();
+    }
+
+}

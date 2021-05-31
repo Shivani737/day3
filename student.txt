@@ -1,0 +1,25 @@
+//student_detail_1
+using System;
+
+public class Student
+{
+public int stud_rollno;
+	public string stud_name;
+}
+
+public class Program  
+    {  
+       public  static void Main()  
+        {
+		  Student stud=new Student();//object
+		   Console.WriteLine("Please enter student roll no");
+		   stud.stud_rollno=Convert.ToInt32(Console.ReadLine());
+		   Console.WriteLine("Please enter student name");
+		   stud.stud_name=Console.ReadLine();
+		  Console.WriteLine("student details are:");
+		  Console.WriteLine("student roll no: "+stud.stud_rollno);
+		   Console.WriteLine("student name is "+stud.stud_name);
+		   
+		   
+}
+}
